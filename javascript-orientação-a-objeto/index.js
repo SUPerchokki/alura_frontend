@@ -1,20 +1,45 @@
 class Cliente{
     nome;
     cpf;
+   
+}
+
+class ContaCorrente{
     agencia;
-    saldo;
+    #saldo;
+
+    sacar(valor){
+        if (valor > this.#saldo || valor <= 0){
+            console.log("não existe #saldo suficiente para o saque, saldo atual na conta: ", this.#saldo);
+        } else if (valor <= this.#saldo){
+            this.#saldo = this.#saldo - valor;
+            console.log("Saque concluido com sucesso, conte suas notas");
+        }
+    }
+
+    depositar(valor){
+        if(valor > 0){
+            this.#saldo += valor;
+        } else {
+            console.log("deposito invalido tente novamente");
+        }
+    }
+
 }
 
 const cliente1 = new Cliente();
-const cliente2 = new Cliente();
-
 cliente1.nome = "Ricardo";
 cliente1.cpf = 11122233309;
-cliente1.agencia = 1001;
-cliente1.saldo = 0;
 
+const cliente2 = new Cliente();
 cliente2.nome = "Alice";
 cliente2.cpf = 88877766690;
-cliente2.agencia = 1001;
-cliente2.saldo = 0;
 
+const contaCorrenteRicardo = new ContaCorrente();
+contaCorrenteRicardo.agencia = 1001;
+
+contaCorrenteRicardo.depositar(100);
+contaCorrenteRicardo.sacar(-100);
+contaCorrenteRicardo.sacar(5);
+
+const contaCorrenteAlice = new ContaCorrente();
