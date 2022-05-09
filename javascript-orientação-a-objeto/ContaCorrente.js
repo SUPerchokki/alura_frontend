@@ -1,10 +1,12 @@
 export class ContaCorrente{
     agencia;
-    _saldo;
+    cliente;
+
+    _saldo = 0;
 
     sacar(valor){
         if (valor > this._saldo || valor <= 0){
-            console.log("não existe saldo suficiente para o saque,saldo atual na conta: ", this._saldo);
+            return(console.log("não existe saldo suficiente para o saque,saldo atual na conta: ", this._saldo));
         } else if (valor <= this._saldo){
             this._saldo = this._saldo - valor;
             return(valor);
@@ -16,6 +18,11 @@ export class ContaCorrente{
             return         
         }
         this._saldo += valor;
+    }
+
+    transferir(valor, conta){
+        const valorSacado = this.sacar(valor);
+        conta.depositar(valorSacado);
     }
 
 }
