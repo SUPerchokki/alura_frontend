@@ -1,22 +1,9 @@
 import { Cliente } from "./Cliente.js";
 import { ContaCorrente } from "./ContaCorrente.js";
+import { ContaPoupanca } from "./ContaPoupanca.js";
+import { Conta } from "./Conta.js";
 
 const cliente1 = new Cliente("Ricardo", 11122233309);
-const cliente2 = new Cliente("Alice", 88877766690);
+const contaPoupanca = new Conta(50, cliente1, 1001);
 
-const contaCorrenteRicardo = new ContaCorrente();
-contaCorrenteRicardo.agencia = 1001;
-contaCorrenteRicardo.cliente = cliente1;
-
-contaCorrenteRicardo.depositar(100);
-contaCorrenteRicardo.sacar(-100);
-contaCorrenteRicardo.sacar(5);
-
-const contaCorrenteAlice = new ContaCorrente();
-contaCorrenteAlice.cliente = cliente2;
-contaCorrenteAlice.agencia = 102;
-
-contaCorrenteRicardo.depositar(500);
-contaCorrenteRicardo.transferir(500,contaCorrenteAlice);
-
-console.log(contaCorrenteAlice);
+const contaCorrenteRicardo = new Conta(0 ,cliente1, 1001);
