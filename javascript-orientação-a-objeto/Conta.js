@@ -23,13 +23,18 @@ export class Conta{
     
 
     sacar(valor){
-        taxa = 1.1 * valor;
-        if (valor > this._saldo || valor <= 0){
-            return(console.log("não existe saldo suficiente para o saque,saldo atual na conta: ", this._saldo));
-        } else if (valor <= this._saldo){
-            this._saldo = this._saldo - valor;
-            return(valor);
+        let taxa = 1;
+        return this._sacar(taxa,valor);
+    }
+
+    _sacar(taxa, valor){
+        const valorSacado = taxa * valor; 
+        if(this._saldo <= valorSacado){
+            this._saldo -= valorSacado;
+            return valorSacado;
         }
+        return 0;
+
     }
 
     depositar(valor){
