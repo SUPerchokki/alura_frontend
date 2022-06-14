@@ -1,8 +1,9 @@
-import { Cliente } from "./Cliente.js";
-import { ContaCorrente } from "./ContaCorrente.js";
-import { ContaPoupanca } from "./ContaPoupanca.js";
+import { Cliente } from "./conta/Cliente.js";
+import { Gerente } from "./funcionario/gerente.js"
+import { Diretor } from "./funcionario/diretor.js"
+import { Funcionario } from "./funcionario/funcionario.js"
+import { metodoDeAutenticacao } from "./sistemaDeAutenticacao.js";
 
 
-const cliente1 = new Cliente("Ricardo", 11122233309);
-const contaPoupanca = new ContaPoupanca(50, cliente1, 1001);
-const contaCorrenteRicardo = new ContaCorrente(0 ,cliente1, 1001);
+const diretor = new Diretor("Rodrigo", 10000, 12344567892);
+const gerente = new Gerente("Ricardo", 5000, 98765432109);
