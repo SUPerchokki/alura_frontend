@@ -1,5 +1,5 @@
 
-.menu-link{
+.menu_link{
     color: #808080;
     text-decoration: none;
     margin-right: 1.2rem;
@@ -7,14 +7,12 @@
 }
 
 
-
-
-.menu-link .ativo{
+.menu_link .ativo{
     color: #333333;
     font-weight: bold;
 }
 
 
-.menu-link:hover{
+.menu_link:hover{
     text-decoration: underline;
 }

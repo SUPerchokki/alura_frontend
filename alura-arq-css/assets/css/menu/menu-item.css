@@ -1,8 +1,8 @@
-.menu-item{
+.menu_item{
     list-style: none;
 }
 
-.menu-item:last-child a{
+.menu_item:last-child a{
     margin: 0;
 
 }
