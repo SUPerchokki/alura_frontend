@@ -7,6 +7,22 @@
     display: flex;
 }
 
+
+/* rensponsivo do cabeçalho */
+.cabecalhoPrincipal .container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+}
+
+.cabecalhoPrincipal-nav{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
 .rodapePrincipal-patrocinadores .container{
     display: flex;
     justify-content: space-between;
