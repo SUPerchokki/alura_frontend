@@ -6,19 +6,27 @@
     "conteudo"
     "rodape";
     grid-template-columns: auto;
-    grid-template-rows: 50px 100vh auto;
+    grid-template-rows: 50px auto auto;
     background-color: lightgray;
 }
 
 .cabecalho {
-
+    align-items: center;
+    padding: 0 2rem;
+    display: flex;
     grid-area: cabecalho;
 }
  
 .conteudo {
+    padding: 0 2rem;
     grid-area: conteudo;
 }
 
 .rodape {
+    background: #FDFDFD;
+    color: #333333;
+    font-size: .8rem;
+    text-align: center;
+    padding: 1rem;
     grid-area: rodape;
 }
