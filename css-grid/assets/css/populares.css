@@ -14,9 +14,7 @@
         "card-corpo";
     grid-template-columns: 100%;
     background-color: #FDFDFD;
-    margin-right: 1rem;
     grid-template-rows: 173px auto;
-    width: calc(20% - 1rem);
 }
 
 .populares__card:nth-child(5){
