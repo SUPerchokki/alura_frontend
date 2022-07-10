@@ -5,7 +5,8 @@
 body{
     background: url(../../img/textura.png), url(../../img/Linhas.svg);
     background-position: center;
-
+    
+    color: var(--cinza);
     font-family: var(--familia-corpo);
     font-size: var(--tamanho-corpo);
 }
@@ -13,4 +14,31 @@ body{
 .container{
     padding-right: 1rem;
     padding-left: 1rem;
+}
+
+.titulo{
+    font-size: var(--tamanho-titulo-destaque);
+
+}
+
+.titulo--destaque{
+    font-family: var(--familia-titulo-destaque);
+    color: var(--preto);
+    font-size: --tamanho-titulo-destaque;
+    font-weight: -peso-titulo-destaque;
+    display: block;
+    margin: .75rem 0;
+
+}
+
+.alinhamento-esquerda{
+    text-align: left;
+}
+
+.alinhamento-centro{
+    text-align: center;
+}
+
+.texto{
+    line-height: 26px;
 }
