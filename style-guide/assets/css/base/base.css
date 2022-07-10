@@ -24,8 +24,8 @@ body{
 .titulo--destaque{
     font-family: var(--familia-titulo-destaque);
     color: var(--preto);
-    font-size: --tamanho-titulo-destaque;
-    font-weight: -peso-titulo-destaque;
+    font-size: var(--tamanho-titulo-destaque);
+    font-weight: var(--peso-titulo-destaque);
     display: block;
     margin: .75rem 0;
 

@@ -7,7 +7,7 @@
     --familia-corpo: "Montserrat", sans-serif;
     --familia-titulo-destaque: 'Elsie Swash Caps', serif;
 
-    -peso-titulo-destaque: 900;
+    --peso-titulo-destaque: 900;
     --tamanho-titulo-destaque: 2rem;
     --tamanho-corpo: 1rem;
 }
