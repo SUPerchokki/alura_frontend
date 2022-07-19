@@ -24,13 +24,16 @@
 
 .rodape__navegacao {
     color: var(--branco);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
     line-height: 3;
+
 }
 
 
 .rodape__link {
     display: inline-block;
-
     margin: 0 .5rem .7rem;
 }
